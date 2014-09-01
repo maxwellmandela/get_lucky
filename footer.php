@@ -18,6 +18,6 @@
 </div><!-- Footer and Sidebar -->
 
 <?php wp_footer(); ?>
-</div><!-----Container------->
+</div><!-----Container----->
 </body>
 </html>

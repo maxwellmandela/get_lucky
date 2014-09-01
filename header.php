@@ -24,8 +24,6 @@
 <body <?php body_class(); ?>>
 	<?php do_action( 'before' ); ?>
 		
-
-
 <nav class="site-navigation">		
 				<div class="navbar navbar-default">
 					<div class="navbar-header">
