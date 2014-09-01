@@ -1,0 +1,20 @@
+<?php
+/**
+ * The sidebar containing the main widget area.
+ *
+ * @package get_lucky
+ */
+
+if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+	return;
+}
+?>
+<div class="col-sm-4" style="border-left:solid #999 1px;">
+	<div id="secondary" class="widget-area" role="complementary">
+
+			<div id="sidebar"><ul><?php  /* Widgetized sidebar, if you have the plugin installed. */
+				if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-1') ) : ?> 
+			<?php endif; ?></ul>
+			</div><!--close sidebar--->
+		
+	</div><!-- #secondary -->
