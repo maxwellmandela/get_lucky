@@ -36,7 +36,7 @@ and Blueprint http://www.blueprintcss.org/
  
  /* Change post title font size */
 	article h1, #content.page h1 {
-  	font-size: 1.8em;
+  	font-size: 2.3em;
 	}
 	
 	.entry-meta { display: after; }

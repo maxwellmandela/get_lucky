@@ -29,7 +29,6 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 </div><!-- #primary -->
-	
-	<div class="col-sm-3">
+
 		<?php get_sidebar(); ?>
 		<?php get_footer(); ?>
