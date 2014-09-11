@@ -15,15 +15,15 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../../../../js/bootstrap.min.js"></script>
 
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-	<?php do_action( 'before' ); ?>
-		
+<body <?php body_class(); ?> style="background-color: #999">
+	<?php do_action( 'before' );  ?>
+
 <nav class="site-navigation">		
 				<div class="navbar navbar-default">
 					<div class="navbar-header">
@@ -51,10 +51,11 @@
                     'walker'  => new wp_bootstrap_navwalker()
                 )
             ); ?>
+        
 				
 				</div><!-- .navbar -->
 </nav><!-- .site-navigation -->
 
 
 	<div class="container">
-		<div class="col-sm-8">
+		<div class="col-sm-8 grid">

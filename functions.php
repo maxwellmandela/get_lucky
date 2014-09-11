@@ -145,4 +145,11 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+/*custom background
+ * 
+$defaults = array(
+'default-color' => '#999');
+
+add_theme_support('custom-background','$defaults');*/
+
 require_once('inc/wp_bootstrap_navwalker.php');?>

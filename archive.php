@@ -94,9 +94,7 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
+    </div>
 
-</div><!-- #primary -->
-	
-	<div class="col-sm-3">
 		<?php get_sidebar(); ?>
 		<?php get_footer(); ?>
