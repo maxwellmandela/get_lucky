@@ -24,10 +24,10 @@ get_header(); ?>
                     <?php while (have_posts()) : the_post(); ?>
                     
                       <div class="post" id="post-<?php the_ID(); ?>">
-                        <h1><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+                        <h1><a  class="titlePost" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
                         <div class="descr"><?php the_time('l, F jS Y '); ?></div>
                         <div class="entry">
-                          <?php the_content('Read the rest of this entry &raquo;'); ?>
+                          <?php the_excerpt(); ?>
                         </div>
                       </div>
                     

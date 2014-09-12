@@ -7,7 +7,7 @@
  * @package get_lucky
  */
 ?>
-
+<hr>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'get_lucky' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'get_lucky' ), 'WordPress' ); ?></a>

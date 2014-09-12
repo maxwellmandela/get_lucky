@@ -160,4 +160,15 @@ require get_template_directory() . '/inc/jetpack.php';
 add_theme_support( 'custom-background', $defaults );
  
 /*Load the navwalker file*/
-require_once('inc/wp_bootstrap_navwalker.php');?>
+require_once('inc/wp_bootstrap_navwalker.php');
+
+/*
+ * Read more new theme
+ * */
+ function new_excerpt_more($more){
+     global $post;
+     return '...<a href="'.get_permalink($post->ID).'">
+                        <button class="btn btn-info btn-xs">Read More</button>
+                    </a>';
+ }
+ add_filter('excerpt_more','new_excerpt_more');

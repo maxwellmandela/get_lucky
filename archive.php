@@ -86,7 +86,8 @@ get_header(); ?>
                         <h1><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
                         <div class="descr"><?php the_time('l, F jS Y '); ?></div>
                         <div class="entry">
-                          <?php the_content('Read the rest of this entry &raquo;'); ?>
+                          <?php the_excerpt(); ?>
+                          <a href="<?php the_permalink();?>">Read More</a>
                         </div>
                       </div>
                     
