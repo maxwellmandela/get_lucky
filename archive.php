@@ -75,17 +75,27 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
-
-			<?php endwhile; ?>
+			<?php $count = 1;
+                    $col_count = 3;
+                    $num_of_posts = $wp_query->post_count;
+                    $post_per_column = ceil($num_of_posts / $col_count); ?>
+                    <div class="col-sm-4">
+                    <?php while (have_posts()) : the_post(); ?>
+                    
+                      <div class="post" id="post-<?php the_ID(); ?>">
+                        <h1><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+                        <div class="descr"><?php the_time('l, F jS Y '); ?></div>
+                        <div class="entry">
+                          <?php the_content('Read the rest of this entry &raquo;'); ?>
+                        </div>
+                      </div>
+                    
+                      <?php if($count == $post_per_column) { echo '</div><div class="col-sm-4">'; }
+                      if($count == 2*$post_per_column) { echo '</div><div class="col-sm-4">'; }
+                      $count++;
+                      endwhile;
+                    ?>
+                </div><!--end #col sm 4 -->
 
 			<?php get_lucky_paging_nav(); ?>
 
