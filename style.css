@@ -34,9 +34,9 @@ and Blueprint http://www.blueprintcss.org/
  text-decoration:none;
  }
  
-/*article h1, #content.page h1 {
-  	font-size: 4.3em;
-}*/
+article h1, #content.page h1 {
+  	font-size: 2.2em;
+}
 	
 .entry-meta { display: after; }
 
@@ -45,3 +45,7 @@ and Blueprint http://www.blueprintcss.org/
 	border-radius: 3px;
 	height:100%;
 }
+
+#column1, #column2, #column3 { float:left; width:30%; margin-right:10px;  }
+#column1 { clear:left; }
+#column3 {margin-right: 0px; }

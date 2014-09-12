@@ -57,5 +57,5 @@
 </nav><!-- .site-navigation -->
 
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="col-sm-8 grid">

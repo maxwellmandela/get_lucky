@@ -1,4 +1,4 @@
-<div class="col-sm-4 grid" style="border-left:solid #999 1px; 
+<div class="col-sm-3 col-sm-offset-1 grid" style="border-left:solid #999 1px; 
 direction: rtl;
 height:100%;">
 
