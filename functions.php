@@ -147,9 +147,17 @@ require get_template_directory() . '/inc/jetpack.php';
 
 /*custom background
  * 
-$defaults = array(
-'default-color' => '#999');
-
-add_theme_support('custom-background','$defaults');*/
-
+ */
+ $defaults = array(
+    'default-color'          => '#000',
+    'default-image'          => '',
+    'default-repeat'         => '',
+    'default-position-x'     => '',
+    'wp-head-callback'       => '_custom_background_cb',
+    'admin-head-callback'    => '',
+    'admin-preview-callback' => ''
+);
+add_theme_support( 'custom-background', $defaults );
+ 
+/*Load the navwalker file*/
 require_once('inc/wp_bootstrap_navwalker.php');?>
