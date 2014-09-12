@@ -19,5 +19,3 @@
 
 <?php wp_footer(); ?>
 </div><!-----Container----->
-</body>
-</html>

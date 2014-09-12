@@ -21,7 +21,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> style="background-color: #999">
+<body <?php body_class(); ?> style="bbackground-color: #999">
 	<?php do_action( 'before' );  ?>
 
 <nav class="site-navigation">		

@@ -50,5 +50,11 @@ get_header(); ?>
 	
 	
 		<?php get_sidebar('primary');?>
+		 <?php get_footer(); ?>
 		
-		<?php get_footer(); ?>
+		
+<div class="container" style="margin-top: 30px;">
+    <div class="col-sm-4 grid"><?php get_sidebar('footer1')?></div>
+    <div class="col-sm-4 grid"><?php get_sidebar('footer2')?></div>
+    <div class="col-sm-3 col-sm-offset-1 grid"><?php get_sidebar('footer3')?></div>
+    

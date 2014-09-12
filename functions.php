@@ -99,6 +99,47 @@ if ( function_exists('register_sidebar') ) {
 		'after_title'   => '</h1>',
 	) );
 }
+
+//footer widget areas
+if ( function_exists('register_sidebar') ) {
+    register_sidebar(array(
+        'name'          => __( 'Footer Widget area', 'get_lucky' ),
+        'id'            => 'footer1',
+        'class'         =>'First footer widget area',
+        'description'   => 'For anything suitable, like newslater sign up',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title">',
+        'after_title'   => '</h1>',
+    ) );
+}
+
+if ( function_exists('register_sidebar') ) {
+    register_sidebar(array(
+        'name'          => __( 'Footer Widget area', 'get_lucky' ),
+        'id'            => 'footer2',
+        'class'         =>'Second footer widget area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title">',
+        'after_title'   => '</h1>',
+    ) );
+}
+
+if ( function_exists('register_sidebar') ) {
+    register_sidebar(array(
+        'name'          => __( 'Footer Widget area', 'get_lucky' ),
+        'id'            => 'footer3',
+        'class'         =>'Third footer widget area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title">',
+        'after_title'   => '</h1>',
+    ) );
+}
+
+
+
 add_action( 'widgets_init', 'get_lucky_widgets_init' );
 
 //Post Thumbnail	
@@ -149,7 +190,7 @@ require get_template_directory() . '/inc/jetpack.php';
  * 
  */
  $defaults = array(
-    'default-color'          => '#000',
+    'default-color'          => '#999999',
     'default-image'          => '',
     'default-repeat'         => '',
     'default-position-x'     => '',
@@ -167,8 +208,6 @@ require_once('inc/wp_bootstrap_navwalker.php');
  * */
  function new_excerpt_more($more){
      global $post;
-     return '...<a href="'.get_permalink($post->ID).'">
-                        <button class="btn btn-info btn-xs">Read More</button>
-                    </a>';
+     return '...<a href="'.get_permalink($post->ID).'"><button class="btn btn-info btn-xs">Read More</button></a>';
  }
  add_filter('excerpt_more','new_excerpt_more');
