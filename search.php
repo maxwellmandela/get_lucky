@@ -17,18 +17,30 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'content', 'search' );
-				?>
-
-			<?php endwhile; ?>
+			<?php $count = 1;
+                    $col_count = 3;
+                    $num_of_posts = $wp_query->post_count;
+                    $post_per_column = ceil($num_of_posts / $col_count); ?>
+                    <div class="col-sm-4">
+                    <?php while (have_posts()) : the_post(); ?>
+                    
+                      <div class="post" id="post-<?php the_ID(); ?>">
+                        <h1><a  class="titlePost" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+                        <div class="descr"><?php the_time('l, F jS Y '); ?></div>
+                        <div class="entry">
+                            <?php if(has_post_thumbnail()){
+                                ?> <img class="img-responsive" scr="<?php the_post_thumbnail();?> <?php
+                            } ?>
+                          <?php the_excerpt(); ?>
+                        </div>
+                      </div>
+                    
+                      <?php if($count == $post_per_column) { echo '</div><div class="col-sm-4">'; }
+                      if($count == 2*$post_per_column) { echo '</div><div class="col-sm-4">'; }
+                      $count++;
+                      endwhile;
+                    ?>
+                </div><!--end #col sm 4 -->
 
 			<?php get_lucky_paging_nav(); ?>
 
@@ -40,6 +52,13 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
+	
+	</div><!-- #End the content -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
+<div class="container-fluid footerContent" style="margin-top: 30px;" id="about">
+    <div class="col-sm-4"><?php get_sidebar('footer1')?></div>
+    <div class="col-sm-4"><?php get_sidebar('footer2')?></div>
+    <div class="col-sm-4"><?php get_sidebar('footer3')?></div>

@@ -52,5 +52,12 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	</div>
 
-<?php get_footer(); ?>
+<?php get_sidebar('primary');?>
+         <?php get_footer(); ?>
+            
+<div class="container-fluid footerContent" style="margin-top: 30px;" id="about">
+    <div class="col-sm-4"><?php get_sidebar('footer1')?></div>
+    <div class="col-sm-4"><?php get_sidebar('footer2')?></div>
+    <div class="col-sm-4"><?php get_sidebar('footer3')?></div>

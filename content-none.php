@@ -21,7 +21,7 @@
 		<?php elseif ( is_search() ) : ?>
 
 			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'get_lucky' ); ?></p>
-			<?php get_search_form(); ?>
+			<?php// get_search_form(); ?>
 
 		<?php else : ?>
 
