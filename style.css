@@ -1,9 +1,9 @@
 /*
 Theme Name: get_lucky
 Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Author: Maxwell Mandela
+Author URI: 24th.96.lt/
+Description: Multicolumn minimalist wordpress theme, will completely change the look of your blog, and yourself. Look nice with your posts and everything. Since blogging is business
 Version: 1.0-wpcom
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -43,4 +43,9 @@ article h1, #content.page h1 {
 .grid{
 	background-color: white;
 	border-radius: 2px;
+}
+
+.footerContent{
+	background-color:#121212;
+	border-radius: 1px;
 }

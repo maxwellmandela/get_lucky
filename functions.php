@@ -103,7 +103,7 @@ if ( function_exists('register_sidebar') ) {
 //footer widget areas
 if ( function_exists('register_sidebar') ) {
     register_sidebar(array(
-        'name'          => __( 'Footer Widget area', 'get_lucky' ),
+        'name'          => __( 'First Footer Widget area', 'get_lucky' ),
         'id'            => 'footer1',
         'class'         =>'First footer widget area',
         'description'   => 'For anything suitable, like newslater sign up',
@@ -116,7 +116,7 @@ if ( function_exists('register_sidebar') ) {
 
 if ( function_exists('register_sidebar') ) {
     register_sidebar(array(
-        'name'          => __( 'Footer Widget area', 'get_lucky' ),
+        'name'          => __( 'Second Footer Widget area', 'get_lucky' ),
         'id'            => 'footer2',
         'class'         =>'Second footer widget area',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -128,16 +128,15 @@ if ( function_exists('register_sidebar') ) {
 
 if ( function_exists('register_sidebar') ) {
     register_sidebar(array(
-        'name'          => __( 'Footer Widget area', 'get_lucky' ),
+        'name'          => __( 'Third Footer Widget area', 'get_lucky' ),
         'id'            => 'footer3',
-        'class'         =>'Third footer widget area',
+        'class'         =>'Second footer widget area',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget'  => '</aside>',
         'before_title'  => '<h1 class="widget-title">',
         'after_title'   => '</h1>',
     ) );
 }
-
 
 
 add_action( 'widgets_init', 'get_lucky_widgets_init' );

@@ -86,8 +86,10 @@ get_header(); ?>
                         <h1><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
                         <div class="descr"><?php the_time('l, F jS Y '); ?></div>
                         <div class="entry">
+                            <?php if(has_post_thumbnail()){
+                                ?> <img style="margin-top: 10px;" class="img-responsive" scr="<?php the_post_thumbnail();?> <?php
+                            } ?>
                           <?php the_excerpt(); ?>
-                          <a href="<?php the_permalink();?>">Read More</a>
                         </div>
                       </div>
                     

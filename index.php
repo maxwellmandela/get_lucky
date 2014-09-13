@@ -27,6 +27,9 @@ get_header(); ?>
                         <h1><a  class="titlePost" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
                         <div class="descr"><?php the_time('l, F jS Y '); ?></div>
                         <div class="entry">
+                            <?php if(has_post_thumbnail()){
+                                ?> <img class="img-responsive" scr="<?php the_post_thumbnail();?> <?php
+                            } ?>
                           <?php the_excerpt(); ?>
                         </div>
                       </div>
@@ -51,10 +54,9 @@ get_header(); ?>
 	
 		<?php get_sidebar('primary');?>
 		 <?php get_footer(); ?>
-		
-		
-<div class="container" style="margin-top: 30px;">
-    <div class="col-sm-4 grid"><?php get_sidebar('footer1')?></div>
-    <div class="col-sm-4 grid"><?php get_sidebar('footer2')?></div>
-    <div class="col-sm-3 col-sm-offset-1 grid"><?php get_sidebar('footer3')?></div>
+			
+<div class="container-fluid footerContent" style="margin-top: 30px;" id="about">
+    <div class="col-sm-4"><?php get_sidebar('footer1')?></div>
+    <div class="col-sm-4"><?php get_sidebar('footer2')?></div>
+    <div class="col-sm-4"><?php get_sidebar('footer3')?></div>
     

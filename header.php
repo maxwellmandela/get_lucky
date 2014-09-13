@@ -17,14 +17,15 @@
 
 <script src="../js/jquery-1.11.1.min.js"></script>
 <script src="../../../../js/bootstrap.min.js"></script>
+<script src="js/scroll.js"></script>
 
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> style="bbackground-color: #999">
+<body <?php body_class(); ?>>
 	<?php do_action( 'before' );  ?>
 
-<nav class="site-navigation">		
+<nav class="site-navigation container">		
 				<div class="navbar navbar-default">
 					<div class="navbar-header">
 				    <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
@@ -55,7 +56,5 @@
 				
 				</div><!-- .navbar -->
 </nav><!-- .site-navigation -->
-
-
 	<div class="container">
 		<div class="col-sm-8 grid">
