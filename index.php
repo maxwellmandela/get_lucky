@@ -23,7 +23,7 @@ get_header(); ?>
                     <div class="col-sm-4">
                     <?php while (have_posts()) : the_post(); ?>
                     
-                      <div class="post" id="post-<?php the_ID(); ?>">
+                        <div class="post" id="post-<?php the_ID(); ?>">
                         <h1><a  class="titlePost" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
                         <div class="descr"><?php the_time('l, F jS Y '); ?></div>
                         <div class="entry">

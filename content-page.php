@@ -24,3 +24,5 @@
 		<?php edit_post_link( __( 'Edit', 'get_lucky' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+
+</div>

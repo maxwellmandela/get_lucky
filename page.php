@@ -28,6 +28,6 @@ get_header(); ?>
 
 			<?php endwhile ;?>
 			</div><!----===Ends page content===------>
-
+			
 		<?php get_sidebar(); ?>
 		<?php get_footer(); ?>
