@@ -79,7 +79,7 @@ function get_lucky_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Secondary Sidebar', 'get_lucky' ),
 		'id'            => 'sidebar-1',
-		'description'   => 'Appears in single posts,archives and pages if active',
+		'description'   => 'The secondary sidebar for woocommerce only',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
@@ -210,3 +210,39 @@ require_once('inc/wp_bootstrap_navwalker.php');
      return '...<a href="'.get_permalink($post->ID).'"><button class="btn btn-info btn-xs">Read More</button></a>';
  }
  add_filter('excerpt_more','new_excerpt_more');
+ 
+
+/*
+ * Override Woocommerce Checkout Fields
+ * And Billing Adress Fields
+ * 
+
+ 
+ function custom_woocommerce_billing_fields($fields){
+     $fields['billing_first_name'] = array(
+     'label' => __('Name','wooothemes'),
+     'placeholder' =>  __('Name','wooothemes'),
+     'required' => true,
+     'class' => array('billing-first-name'));
+     
+     
+     return $fields;
+ }
+ 
+add_filter('woocommerce_billing_fields','custom_woocommerce_billing_fields');
+
+**/
+ 
+function custom_override_checkout_fields($fields){
+    $fields['shipping']['shipping_phone'] = array(
+    'label' => __('Phone','woothemes'),
+    'placeholder' => _x('Phone','placeholder','woocommerce'),
+    'required' => true,
+    'class' => array('form-row-wide'),
+    'clear' => true);
+    
+    
+   return $fields;
+}
+
+add_filter('woocommerce_checkout_fields','custom_override_checkout_fields');
