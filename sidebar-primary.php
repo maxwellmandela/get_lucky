@@ -1,5 +1,5 @@
 <div class="col-sm-3 col-sm-offset-1 grid"
-direction: rtl;
+style="direction: rtl;
 height:auto;">
 
 <div id="sidebar"><ul>
