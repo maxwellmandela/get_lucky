@@ -22,7 +22,10 @@ and Blueprint http://www.blueprintcss.org/
 */
 
 @import url( inc/bootstrap.min.css );
+<<<<<<< HEAD
 /*@import url(inc/bootstrap.css);*/
+=======
+>>>>>>> eb679e95e2d8a5b678291b11a1d17ae6c84006df
 
 #sidebar ul
 {
@@ -49,7 +52,10 @@ article h1, #content.page h1 {
 .footerContent{
 	background-color:#121212;
 	border-radius: 1px;
+<<<<<<< HEAD
 }
 .btn-smooth{
 	border-radius: 30px;
+=======
+>>>>>>> eb679e95e2d8a5b678291b11a1d17ae6c84006df
 }

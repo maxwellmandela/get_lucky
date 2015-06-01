@@ -11,6 +11,7 @@
  */
 
 get_header(); ?>
+<<<<<<< HEAD
 	<?php while ( have_posts() ) : the_post(); ?>
 
 		<?php get_template_part( 'content', 'page' ); ?>
@@ -29,3 +30,25 @@ get_header(); ?>
 	
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+=======
+
+
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part( 'content', 'page' ); ?>
+
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template
+					/*
+					if ( comments_open() || '0' != get_comments_number() ) :
+						comments_template();
+					endif;
+					*/
+				?>
+
+			<?php endwhile ;?>
+			</div><!----===Ends page content===------>
+			
+		<?php get_sidebar(); ?>
+		<?php get_footer(); ?>
+>>>>>>> eb679e95e2d8a5b678291b11a1d17ae6c84006df

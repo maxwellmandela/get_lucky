@@ -18,7 +18,11 @@ function get_lucky_paging_nav() {
 	}
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
+<<<<<<< HEAD
 		<h1 class="screen-reader-text"><?php _e( 'Page Navigation', 'get_lucky' ); ?></h1>
+=======
+		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'get_lucky' ); ?></h1>
+>>>>>>> eb679e95e2d8a5b678291b11a1d17ae6c84006df
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
@@ -48,6 +52,7 @@ function get_lucky_post_nav() {
 		return;
 	}
 	?>
+<<<<<<< HEAD
 	<!--<h4 class="screen-reader-text btn btn-primary"><?php _e( 'Post Navigation', 'get_lucky' ); ?></h4>-->
 	<ul class="pager">
 		<?php
@@ -56,6 +61,17 @@ function get_lucky_post_nav() {
 		?>
 	</ul>
 
+=======
+	<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'get_lucky' ); ?></h1>
+		<div class="nav-links">
+			<?php
+				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'get_lucky' ) );
+				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     'get_lucky' ) );
+			?>
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+>>>>>>> eb679e95e2d8a5b678291b11a1d17ae6c84006df
 	<?php
 }
 endif;

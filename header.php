@@ -15,12 +15,18 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<<<<<<< HEAD
 <!--<script src="../js/jquery-1.11.1.min.js"></script>
 <script src="../../../../js/bootstrap.min.js"></script>
 <script src="js/scroll.js"></script>-->
 <script type="text/javascript" src="http://localhost/docs/js/jquery.min.js"></script>
 <script type="text/javascript" src="http://localhost/docs/ih_server/style/pure/bootstrap.min.js"></script>
 
+=======
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../../../../js/bootstrap.min.js"></script>
+<script src="js/scroll.js"></script>
+>>>>>>> eb679e95e2d8a5b678291b11a1d17ae6c84006df
 
 <?php wp_head(); ?>
 </head>
