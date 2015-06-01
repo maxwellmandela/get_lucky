@@ -1,0 +1,55 @@
+/*
+Theme Name: get_lucky
+Theme URI: http://maxwellmandela//get_lucky/
+Author: Maxwell Mandela
+Author URI: http://maxwellmandela/
+Description: Multicolumn minimalist wordpress theme, will completely change the look of your blog, and yourself. Look nice with your posts and everything. Since blogging is business
+Version: 1.0-wpcom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: get_lucky
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ get_lucky is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+@import url( inc/bootstrap.min.css );
+/*@import url(inc/bootstrap.css);*/
+
+#sidebar ul
+{
+ margin: 0;
+ padding: 0;
+ list-style:none;
+ }
+ 
+ a:hover{
+ text-decoration:none;
+ }
+ 
+article h1, #content.page h1 {
+  	font-size: 2.2em;
+}
+	
+.entry-meta { display: after; }
+
+.grid{
+	background-color: #F9F9F9;
+	border-radius: 2px;
+}
+
+.footerContent{
+	background-color:#121212;
+	border-radius: 1px;
+}
+.btn-smooth{
+	border-radius: 30px;
+}
