@@ -6,30 +6,25 @@
  *
  * @package get_lucky
  */
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?php wp_title( '|', true, 'right' ); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<<<<<<< HEAD
-<!--<script src="../js/jquery-1.11.1.min.js"></script>
-<script src="../../../../js/bootstrap.min.js"></script>
-<script src="js/scroll.js"></script>-->
-<script type="text/javascript" src="http://localhost/docs/js/jquery.min.js"></script>
-<script type="text/javascript" src="http://localhost/docs/ih_server/style/pure/bootstrap.min.js"></script>
+	<?php 
+		$baseurl = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']."/wp-content/themes/get_lucky";
+	?>
+	<script src="<?php $baseurl ?>/js/jquery-1.11.1.min.js"></script>
+	<script src="<?php $baseurl ?>/js/bootstrap.min.js"></script>
+	<script src="<?php $baseurl ?>/js/scroll.js"></script>
+	<script src="<?php $baseurl ?>/js/customizer.js"></script>
 
-=======
-<script src="../js/jquery-1.11.1.min.js"></script>
-<script src="../../../../js/bootstrap.min.js"></script>
-<script src="js/scroll.js"></script>
->>>>>>> eb679e95e2d8a5b678291b11a1d17ae6c84006df
-
-<?php wp_head(); ?>
-</head>
+	<?php wp_head(); ?>
 
 <body <?php body_class(); ?>>
 	<?php do_action( 'before' );  ?>

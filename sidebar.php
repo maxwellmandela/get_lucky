@@ -11,8 +11,8 @@ if ( ! is_active_sidebar( 'primary' )){
 }
 ?>
 <div class="col-sm-3 col-sm-offset-1 grid" style="direction: rtl;">
-
-			<div id="sidebar"><ul><?php  // Widgetized sidebar, if you have the plugin installed
-				if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('primary') ) : ?> 
-			<?php endif; ?></ul>
-			</div><!--close sidebar--->
+	<div id="sidebar">
+		<?php  // Widgetized sidebar, if you have the plugin installed
+			if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('primary') ) : ?> 
+		<?php endif; ?>
+	</div><!--close sidebar--->
